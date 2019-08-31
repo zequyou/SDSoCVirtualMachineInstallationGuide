@@ -94,7 +94,7 @@ It tells you the progress.
 15. Set the license in ~/.bashrc file. Add the following line to the end of this file  ```export XILINXD_LICENSE_FILE=???``` (You can find ??? content in the first assignment document.).  Run command ```source ~/.bashrc```.
 
 16. run command ```sudo usermod -a -G dialout,audio YOUR_USER_NAME```. Change YOUR_USER_NAME to the user name you create on step9. For me, it is developer.
-17. Reboot your computer.
+17. Reboot your virtual machine.
 18. Enjoy your virtual machine SDSoC environment.
 
 ## Q&A
