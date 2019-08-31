@@ -90,10 +90,12 @@ It tells you the progress.
 
 12. Open the VMware Tools disk on the desktop. Decompress the only one tar.gz file inside it. Follow the instruction inside it to install the tools.
 13. Click 'Player(P)', choose Management and click 'Virtual Machine Settings'. In the options page, share your dir where you have the SDSoC installation file. Then, in the /mnt, you will find the dir you just set.
-14. Install SDSoC with the official guide https://www.xilinx.com/support/documentation/sw_manuals/xilinx2018_3/ug1238-sdx-rnil.pdf. **Do not forget to install the cable driver**.
+14. Install SDSoC with the official guide https://www.xilinx.com/support/documentation/sw_manuals/xilinx2018_3/ug1238-sdx-rnil.pdf. **Do not forget to install the cable driver**. I recommend you to install it inside your home dir and do not install it as root.
 15. Set the license in ~/.bashrc file. Add the following line to the end of this file  ```export XILINXD_LICENSE_FILE=???``` (You can find ??? content in the first assignment document.).  Run command ```source ~/.bashrc```.
 
-16. Enjoy your virtual machine SDSoC environment.
+16. run command ```sudo usermod -a -G dialout,audio YOUR_USER_NAME```. Change YOUR_USER_NAME to the user name you create on step9. For me, it is developer.
+17. Reboot your computer.
+18. Enjoy your virtual machine SDSoC environment.
 
 ## Q&A
 
